@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row post-list">
+
+      </div>
+
+<div class ="row col-12">
+
+
+  <div class="mr-5">
+    <h2>Добавление поста</h2>
+    <div class="form-group">
+      <label for="exampleInputEmail">Заголовок поста</label>
+      <input type ="text" class="form-control" id="title" area-describedbe="emailHelp">
+
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword">Содержимое</label>
+      <textarea type ="password" class="form-control" id="body"></textarea>
+
+  </div>
+  <button class="btn btn-primary" onclick="addPost()">Добавить пост</button>
+
+</div>
+</div>
+
+<div id="editing-element" value="0" class ="row col-12">
+  <div>
+    <h2>Редактирование поста</h2>
+    <div class="form-group">
+      <label for="exampleInputEmail">Заголовок поста</label>
+      <input type ="text" class="form-control" id="title-edit" area-describedbe="emailHelp">
+
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword">Содержимое</label>
+      <textarea type ="password" class="form-control" id="body-edit"></textarea>
+
+  </div>
+  <button class="btn btn-primary" onclick="updatePost()">Обновить пост</button>
+</div>
+</div>
+
+</div>
+
+
+    <script src="main.js">
+
+    </script>
+
+  </body>
+</html>
